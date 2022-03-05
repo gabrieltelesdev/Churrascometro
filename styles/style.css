@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url(/images/churrasco);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    width: 20%;
+    margin: auto;
+    padding: 40px;
+    background-color: #461c0da6;
+    border-radius: 10px;
+}
+
+h1 {
+    color: whitesmoke;
+    text-shadow: #000000 4px 4px 4px;
+    text-align: center;
+    margin-top: 0;
+}
+
+input {
+    font-family: "Open Sans Condensed", sans-serif;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 18px;
+    border-radius:10px;
+    border: none;
+    font-weight: 700;
+}
+
+button {
+    text-align: right;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius:10px;
+    font-size: 14px;
+    background-color: #8C0303;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+button:hover {
+    background-color: #750404;
+    box-shadow: #000000 1px 1px 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+

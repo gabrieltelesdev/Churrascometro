@@ -7,19 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Churrascômetro</title>
 </head>
 <body>
     <div class="container">
         <h1>Churrascômetro</h1>
-        <input type="number" name="adulto" id="adulto" placeholder="Adultos">
+        <input type="number" name="homem" id="homem" placeholder="Homens">
+        <input type="number" name="mulher" id="mulher" placeholder="Mulheres">
         <input type="number" name="crianca" id="crianca" placeholder="Crianças">
         <input type="number" name="duracao" id="duracao" placeholder="Duração">
-        <button>Calcular</button>
+        <button onclick="calCular()">Calcular</button>
         <div id="resultado">
             
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
