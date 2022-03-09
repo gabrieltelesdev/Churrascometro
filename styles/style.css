@@ -7,7 +7,7 @@
 }
 
 .container {
-    background-image: url(/images/churrasco_5.webp);
+    background-image: url(../images/churrasco_5.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
