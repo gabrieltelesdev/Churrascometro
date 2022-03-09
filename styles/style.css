@@ -1,58 +1,102 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans Condensed', sans-serif;
-    background-image: url(/images/churrasco);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 1rem;
 }
 
 .container {
-    width: 20%;
+    background-image: url(/images/churrascometro-bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.content {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 500px;
+    width: 100%;
     margin: auto;
+    background-color: #dbbd8fa4;
     padding: 40px;
-    background-color: #461c0da6;
     border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
 }
 
 h1 {
-    color: whitesmoke;
-    text-shadow: #000000 4px 4px 4px;
+    font-size: 2rem;
+    padding: 10px 0;
     text-align: center;
-    margin-top: 0;
+    color: #ffefeb;
+    text-shadow: rgba(0, 0, 0, 0.479) 2px 2px 2px;
 }
 
 input {
-    font-family: "Open Sans Condensed", sans-serif;
-    display: block;
     width: 100%;
+    display: block;
+    padding: 5px;
     box-sizing: border-box;
-    padding: 10px;
-    margin: 10px 0px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 159, 159);
     font-size: 18px;
-    border-radius:10px;
-    border: none;
-    font-weight: 700;
+    text-align: center;
 }
 
 button {
-    text-align: right;
-    padding: 15px;
+    background-color: #D0201A;
+    padding:10px;
     margin: 10px 0;
-    border-radius:10px;
-    font-size: 14px;
-    background-color: #8C0303;
-    color: white;
-    text-transform: uppercase;
+    border-radius: 5px;
     border: none;
+    box-shadow: #412723 2px 2px 2px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: antiquewhite;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e0241d;
+    box-shadow: #412723 4px 4px 2px ;
 }
 
-button:hover {
-    background-color: #750404;
-    box-shadow: #000000 1px 1px 5px;
-    font-weight: 700;
-    cursor: pointer;
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 600px){
+    .content {
+        position: relative;
+        margin: auto;
+    }
+
+    .container {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        margin: 10px auto;
+        padding:10px;
+        font-size: 12px;
+        color: antiquewhite;
+    }    
 }
 
